@@ -1,0 +1,14 @@
+version: '2.1'
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./:/home/api/app
+    command: python app/main.py
+    environment:
+      - app_env=local
+    ports:
+      - "5000:5000"
