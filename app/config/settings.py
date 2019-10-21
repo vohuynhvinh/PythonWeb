@@ -26,6 +26,7 @@ SECRET_KEY = 'y&9ed-wbu)8i9-%)zcl=e^auz!k+lnjq4o7@e8ng28gu36&via'
 DEBUG = True
 
 ALLOWED_HOSTS = [
+    'localhost',
     'python.service.docker'
 ]
 

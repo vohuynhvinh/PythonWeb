@@ -12,3 +12,5 @@ services:
     command: bash -c "cd app && python main.py makemigrations && python main.py migrate && python main.py runserver 0.0.0.0:80"
     environment:
       - app_env=local
+    ports:
+      - "8000:80"
