@@ -1,10 +1,10 @@
 FROM python:3.7.5-buster
 
-WORKDIR /home/api/app
+WORKDIR /home/web/app
 
-COPY app/dependencies.txt /home/api/app/dependencies.txt
+COPY app/dependencies.txt /home/web/app/dependencies.txt
 
 RUN /bin/bash -c "pip install --upgrade pip &&\
-     pip install --src=/src -r /home/api/app/dependencies.txt"
+     pip install --src=/src -r /home/web/app/dependencies.txt"
 
-ADD . /home/api/app
+ADD . /home/web/app

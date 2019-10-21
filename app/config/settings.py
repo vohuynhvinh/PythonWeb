@@ -25,7 +25,9 @@ SECRET_KEY = 'y&9ed-wbu)8i9-%)zcl=e^auz!k+lnjq4o7@e8ng28gu36&via'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'python.service.docker'
+]
 
 
 # Application definition
